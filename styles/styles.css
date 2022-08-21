@@ -52,6 +52,15 @@
   color: #00cc66;
   transition: all 0.3s ease;
 }
+.navbar__menu #button {
+  padding: 12px 24px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: #00cc66;
+  margin-left: 16px;
+  color: #f7f7f7;
+}
 
 * {
   box-sizing: border-box;
