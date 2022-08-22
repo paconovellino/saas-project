@@ -119,3 +119,12 @@
         // }
     }
 }
+.footer{
+    position: sticky;
+    bottom: 0;
+    background-color: $lime;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: whitesmoke;
+}

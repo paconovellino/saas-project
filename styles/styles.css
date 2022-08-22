@@ -177,4 +177,15 @@
 }
 .hero__container--right {
   text-align: center;
+}
+
+.footer {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  background-color: orange;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  color: whitesmoke;
 }/*# sourceMappingURL=styles.css.map */
