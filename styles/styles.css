@@ -53,7 +53,7 @@
   padding: 0 1rem;
 }
 .navbar__menu--links:hover {
-  color: #00cc66;
+  color: orange;
   transition: all 0.3s ease;
 }
 .navbar__menu #button {
@@ -61,12 +61,12 @@
   border: none;
   outline: none;
   border-radius: 4px;
-  background: #00cc66;
+  background: orange;
   margin-left: 16px;
   color: #f7f7f7;
 }
 .navbar__menu #button:hover {
-  background: #fb4b4e;
+  background: rgb(51, 178, 51);
   transition: all 0.3s ease;
 }
 
@@ -115,7 +115,7 @@
 }
 .hero__container--left h1 {
   font-size: 4rem;
-  color: #00cc66;
+  color: orange;
 }
 @media screen and (max-width: 768px) {
   .hero__container--left h1 {
@@ -144,7 +144,7 @@
 }
 .hero__container--btn {
   font-size: 1rem;
-  background-color: #00cc66;
+  background-color: orange;
   padding: 14px 32px;
   border: none;
   border-radius: 4px;
@@ -168,7 +168,7 @@
   left: 0;
   width: 0;
   height: 100%;
-  background: #fb4b4e;
+  background: rgb(51, 178, 51);
   transition: all 0.3s;
   border-radius: 4px;
 }
