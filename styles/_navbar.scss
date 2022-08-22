@@ -66,6 +66,11 @@
             background: $lime;
             margin-left: 16px;
             color: $light;
+
+            &:hover{
+                background: $orangeRed;
+                transition: all 0.3s ease;
+            }
         }
     }
 }
