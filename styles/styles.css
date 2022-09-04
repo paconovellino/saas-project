@@ -71,10 +71,15 @@
 }
 
 * {
-  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
 }
 
 .hero {
@@ -179,9 +184,24 @@
   text-align: center;
 }
 
+.sub-heading {
+  text-align: center;
+  font-family: "Fugaz One";
+  color: orange;
+  font-size: 1.3rem;
+  padding-top: 1rem;
+}
+
+.heading {
+  font-family: "Fugaz One";
+  text-align: center;
+  color: rgb(51, 178, 51);
+  font-size: 1.5rem;
+  padding-bottom: 2rem;
+  text-transform: uppercase;
+}
+
 .footer {
-  position: -webkit-sticky;
-  position: sticky;
   bottom: 0;
   background-color: orange;
   text-align: center;
@@ -189,4 +209,33 @@
   padding-bottom: 25px;
   color: whitesmoke;
   font-weight: 700;
+  position: relative;
+  width: 100%;
+}
+
+.dishes .box-container {
+  display: grid;
+  width: 90%;
+  align-self: center;
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  gap: 1.5rem;
+}
+
+.dishes .box-container .box {
+  padding: 2.5rem;
+  background: #fff;
+  border-radius: 0.5rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  box-shadow: var(--box-shadow);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.dishes .box-container .box img {
+  height: 18rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=styles.css.map */
