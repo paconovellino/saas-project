@@ -82,6 +82,10 @@
   transition: all 0.2s linear;
 }
 
+section {
+  padding: 2rem 9%;
+}
+
 .hero {
   background-color: #f7f7f7;
 }
@@ -213,29 +217,85 @@
   width: 100%;
 }
 
-.dishes .box-container {
+.menu .grid {
   display: grid;
-  width: 90%;
-  align-self: center;
-  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
-  gap: 1.5rem;
+  grid-gap: 16px;
+  padding: 16px;
 }
-
-.dishes .box-container .box {
-  padding: 2.5rem;
-  background: #fff;
+@media (min-width: 768px) {
+  .menu .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 960px) {
+  .menu .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1200px) {
+  .menu .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.menu .grid .col {
+  margin-bottom: 16px;
+  padding: 16px;
+  border-style: solid;
+  border-radius: 7px;
   border-radius: 0.5rem;
   border: 0.1rem solid rgba(0, 0, 0, 0.2);
-  box-shadow: var(--box-shadow);
-  position: relative;
-  overflow: hidden;
-  text-align: center;
 }
-
-.dishes .box-container .box img {
+.menu .grid img {
+  display: block;
   height: 18rem;
   width: 100%;
   border-radius: 0.5rem;
-  -o-object-fit: cover;
-     object-fit: cover;
+  max-width: 100%;
+}
+.menu .grid .stars {
+  color: #27ae60;
+}
+
+.about .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+}
+.about .content {
+  flex: 1 1 45rem;
+}
+.about img {
+  display: block;
+  height: 18rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  max-width: 100%;
+}
+.about .content h3 {
+  color: green;
+  font-size: 2rem;
+  padding: 0.5rem 0;
+  font-family: "Fugaz One";
+}
+.about .content p {
+  line-height: 2;
+}
+.about .icons-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+  margin-top: 0.5rem;
+}
+.about .icons-container .icons {
+  background: #eee;
+  border-radius: 0.5rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  flex: 1 1 1rem;
+  padding: 1rem 1rem;
 }/*# sourceMappingURL=styles.css.map */

@@ -2,7 +2,7 @@
 
 @import 'navbar';
 
-*{
+* {
     font-family: 'Nunito', sans-serif;
     margin: 0;
     padding: 0;
@@ -14,12 +14,17 @@
     transition: all .2s linear;
 }
 
+section {
+    padding: 2rem 9%;
+}
+
+
 // this is the hero section
 
-.hero{
+.hero {
     background-color: $light;
 
-    &__container{
+    &__container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
@@ -32,52 +37,54 @@
         padding-right: 24px;
         padding-left: 24px;
 
-        @include tablet{
+        @include tablet {
             grid-template-columns: 1fr;
             height: 100%;
         }
-        &--left{
+
+        &--left {
             width: 100%;
             line-height: 1.2;
 
-            @include tablet{
+            @include tablet {
                 padding: 5rem 0;
             }
-            @include mobile{
+
+            @include mobile {
                 line-height: 1.5;
             }
         }
 
-        &--left h1{
+        &--left h1 {
             font-size: 4rem;
             color: $lime;
 
-            @include mobile{
+            @include mobile {
                 font-size: 2.5rem;
             }
         }
-         
-        &--left h2{
+
+        &--left h2 {
             font-size: 4rem;
             color: $dark;
 
-            @include mobile{
+            @include mobile {
                 font-size: 2rem;
             }
         }
 
-        &--left p{
+        &--left p {
             font-size: 2rem;
             font-weight: 700;
             color: $dark;
             margin-top: 1rem;
 
-            @include mobile{
+            @include mobile {
                 font-size: 1.5rem;
             }
         }
 
-        &--btn{
+        &--btn {
             font-size: 1rem;
             background-color: $lime;
             padding: 14px 32px;
@@ -91,14 +98,14 @@
             outline: none;
         }
 
-        &--btn a{
+        &--btn a {
             position: relative;
             z-index: 2;
             color: $light;
             text-decoration: none;
         }
 
-        &--btn:after{
+        &--btn:after {
             position: absolute;
             content: '';
             top: 0;
@@ -110,18 +117,14 @@
             border-radius: 4px;
         }
 
-        &--btn:hover:after{
+        &--btn:hover:after {
             width: 100%;
         }
 
-        &--right{
+        &--right {
             text-align: center;
         }
 
-        // &--img{
-        //     height: 100%;
-        //     width: 100%;
-        // }
     }
 }
 
@@ -143,7 +146,7 @@
     text-transform: uppercase;
 }
 
-.footer{
+.footer {
     bottom: 0;
     background-color: $lime;
     text-align: center;
@@ -153,33 +156,96 @@
     font-weight: 700;
     position: relative;
     width: 100%;
-    
+
 }
 
-
-
-.dishes .box-container {
+.menu .grid {
     display: grid;
-    width: 90%;
-    align-self: center;
-    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
-    gap: 1.5rem;
+    grid-gap: 16px;
+    padding: 16px;
+
+    @media(min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media(min-width: 960px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media(min-width: 1200px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .col {
+        margin-bottom: 16px;
+        padding: 16px;
+        border-style: solid;
+        border-radius: 7px;
+        border-radius: .5rem;
+        border: .1rem solid rgba(0, 0, 0, .2);
+    }
+
+    img {
+        display: block;
+        height: 18rem;
+        width: 100%;
+        border-radius: .5rem;
+        max-width: 100%;
+    }
+
+    .stars {
+        color: #27ae60;
+    }
 }
 
-.dishes .box-container .box {
-    padding: 2.5rem;
-    background: #fff;
-    border-radius: .5rem;
-    border: .1rem solid rgba(0, 0, 0, .2);
-    box-shadow: var(--box-shadow);
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-}
+.about {
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        align-items: center;
+    }
 
-.dishes .box-container .box img {
-    height: 18rem;
-    width: 100%;
-    border-radius: .5rem;
-    object-fit: cover;
+    .content {
+        flex: 1 1 45rem;
+    }
+
+    img {
+        display: block;
+        height: 18rem;
+        width: 100%;
+        border-radius: .5rem;
+        max-width: 100%;
+    }
+
+    .content h3 {
+        color: green;
+        font-size: 2rem;
+        padding: .5rem 0;
+        font-family: 'Fugaz One';
+    }
+
+    .content p {
+        line-height: 2;
+    }
+
+    .icons-container {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        padding: 1rem 0;
+        margin-top: .5rem
+    }
+
+    .icons-container .icons {
+        background: #eee;
+        border-radius: .5rem;
+        border: .1rem solid rgba(0, 0, 0, .2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .5rem;
+        flex: 1 1 1rem;
+        padding: 1rem 1rem;
+    }
 }
