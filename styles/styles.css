@@ -84,18 +84,16 @@
 
 section {
   padding: 2rem 9%;
+  min-height: 80vh;
 }
 
-.hero {
-  background-color: #f7f7f7;
-}
 .hero__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-items: center;
   margin: 0 auto;
-  height: 90vh;
+  height: 70vh;
   z-index: 1;
   width: 100%;
   max-width: 1200px;
@@ -213,7 +211,7 @@ section {
   padding-bottom: 25px;
   color: whitesmoke;
   font-weight: 700;
-  position: relative;
+  flex-shrink: 0;
   width: 100%;
 }
 

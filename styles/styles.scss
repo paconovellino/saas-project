@@ -16,13 +16,14 @@
 
 section {
     padding: 2rem 9%;
+    min-height: 80vh;
 }
 
 
 // this is the hero section
 
 .hero {
-    background-color: $light;
+    
 
     &__container {
         display: grid;
@@ -30,7 +31,7 @@ section {
         align-items: center;
         justify-items: center;
         margin: 0 auto;
-        height: 90vh;
+        height: 70vh;
         z-index: 1;
         width: 100%;
         max-width: 1200px;
@@ -154,9 +155,9 @@ section {
     padding-bottom: 25px;
     color: whitesmoke;
     font-weight: 700;
-    position: relative;
+    // position: absolute;
+    flex-shrink: 0;
     width: 100%;
-
 }
 
 .menu .grid {
