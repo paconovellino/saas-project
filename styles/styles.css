@@ -352,4 +352,30 @@ form .btn {
   border-radius: 7px;
   font-size: small;
   padding: 1rem;
+}
+
+.address .grid {
+  display: grid;
+  grid-gap: 16px;
+  padding: 16px;
+}
+@media (min-width: 768px) {
+  .address .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 960px) {
+  .address .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1200px) {
+  .address .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.address .grid .col {
+  margin-bottom: 16px;
+  padding: 16px;
+  align-self: center;
 }/*# sourceMappingURL=styles.css.map */
